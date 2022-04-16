@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    width: 40rem;
+    height: 50rem;
+    border-radius: 5rem;
+    background: linear-gradient(191.34deg, #17181A -4.95%, #17181A 103.74%);
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(6, 1fr);
+    gap: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+    margin: 3rem;
+}
+.container .display{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    color: #1991FF;
+    font-size: 3rem;
+    font-weight: bold;
+    background: #303136;
+}
+.container .display .display-valor:nth-child(1){
+    font-size: 5rem;
+    font-weight: bold;
+    color: #199;
+    margin-right: 1rem;
+}
+.container .display .display-valor:nth-child(2){
+    font-size: 3rem;
+    font-weight: bold;
+    color: #199;
+    margin-right: 1rem;
+}
+.container .numero,
+.container .operadores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    color: #1991FF;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: #303136;
+}
+.container .numero:hover,
+.container .operadores:hover{
+    background: #1991FF;
+    color: #fff;
+}
+.container .numero:active,
+.container .operadores:active{
+    background: #fff;
+    color: #1991FF;
+}
+.display{
+    grid-area: 2 / 2 / 5 / 6;
+}
+.num7{
+    grid-area: 6 / 2 / 7 / 3;
+}
+.num8{
+    grid-area: 6 / 3 / 7 / 4;
+}
+.num9{
+    grid-area: 6 / 4 / 7 / 5;
+}
+.num4{
+    grid-area: 7 / 2 / 8 / 3;
+}
+.num5{
+    grid-area: 7 / 3 / 8 / 4;
+}
+.num6{
+    grid-area: 7 / 4 / 8 / 5;
+}
+.num1{
+    grid-area: 8 / 2 / 9 / 3;
+}
+.num2{
+    grid-area: 8 / 3 / 9 / 4;
+}
+.num3{
+    grid-area: 8 / 4 / 9 / 5;
+}
+.num0{
+    grid-area: 9 / 2 / 10 / 4;
+}
+.punto{
+    grid-area: 9 / 4 / 10 / 5;
+}
+.operadorIgual{
+    grid-area: 8 / 5 / 10 / 6;
+}
+.operadorSuma{
+    grid-area: 7 / 5 / 8 / 6;
+}
+.operadorResta{
+    grid-area: 6 / 5 / 7 / 6;
+}
+.operadorMultiplicacion{
+    grid-area: 5 / 5 / 6 / 6;
+}
+.operadorDivision{
+    grid-area: 5 / 4 / 6 / 5;
+}
+.operadorBorrar{
+    grid-area: 5 / 3 / 6 / 4;
+}
+.operadorBorrarTodo{
+    grid-area: 5 / 2 / 6 / 3;
+}
